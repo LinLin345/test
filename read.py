@@ -7,3 +7,9 @@ with open("reviews.txt", "r") as r:
 		if count % 1000 == 0:
 			print(count)
 print(data[0])
+
+# count average len of reviews
+sum_len = 0
+for d in data:
+	sum_len += len(d)
+print(sum_len/len(data))
